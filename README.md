@@ -1,8 +1,8 @@
-# transform2d
+# micro-transform2d
 
 [![NPM version](https://img.shields.io/npm/v/micro-transform2d.svg)](https://www.npmjs.com/package/micro-transform2d)
 
-A tool for quickly setting CSS Transform
+A tool for quickly setting CSS Transform  
 NPM page: https://www.npmjs.com/package/micro-transform2d
 
 # Installation
