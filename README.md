@@ -49,6 +49,37 @@ t2d.setScale(scale, function (val) {
 除了setScale之外，其余方法relative参数均为布尔值，相对于元素当前偏移值增加传入值
 ```
 
+```
+结合micro-touch实现拖拽阻力
+
+let pullN = 0.2;
+
+let tg = new TouchGesture(divDom.current);
+let t2d = new Transform2D(divDom.current);
+t2d.setTranslate(50, 0);
+
+tg.on("tapDown", function () {
+    divDom.current.style.removeProperty("transition");
+    t2d.setTranslate(50, 0);
+});
+
+tg.on("pressMove", function (e) {
+    let {moveDistance: {x, y, d}} = e;
+    let [nowX, nowY] = t2d.getTranslate();
+
+    if (nowY > 50) {
+        y *= pullN;
+    }
+
+    t2d.setTranslate(50, nowY + y);
+});
+
+tg.on("tapUp", function () {
+    divDom.current.style.transition = "500ms";
+    t2d.setTranslate(50, 0);
+});
+```
+
 # Note
 
 - new Transform2D(el)
