@@ -20,7 +20,7 @@ t2d.setRotate(rotate).setTranslate(5, 5);
 ```
 
 ```
-注意变换是有顺序区分的，如果你要求变换安装一定顺序请初始化时这样操作
+注意变换是有顺序区分的，如果你要求变换按照一定顺序请初始化时这样操作
 import {Transform2D} from "micro-transform2d";
 let t2d = new Transform2D(tou.el);
 Translate会在rotate之前执行
