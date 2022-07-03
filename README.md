@@ -2,8 +2,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/micro-transform2d.svg)](https://www.npmjs.com/package/micro-transform2d)
 
-A tool for quickly setting CSS Transform  
-NPM page: https://www.npmjs.com/package/micro-transform2d
+> A tool for quickly setting CSS Transform  
+> NPM page: https://www.npmjs.com/package/micro-transform2d
 
 # Installation
 
@@ -83,8 +83,8 @@ tg.on("tapUp", function () {
 # Note
 
 - new Transform2D(el)
-    - el: DOM对象
-    
+  - el: DOM对象
+
 - getMatrix() : 获取Matrix属性，返回是一个大小为6的数组，代表变换矩阵
 - setMatrix([1,0,0,1,0,0]) : 设置Matrix属性
 - getTranslate() : 获取偏移translate
@@ -99,7 +99,7 @@ tg.on("tapUp", function () {
 - radian2angle() : 弧度转角度
 - angle2radian() : 角度转弧度
 - transform() : 获取transform属性
-- setTransform(result: RegExpMatchArray | null, val: string) : 
+- setTransform(result: RegExpMatchArray | null, val: string) :
 
 - reset() : 清除变换顺序用于重新初始变换应用顺序
 

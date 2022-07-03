@@ -1,7 +1,7 @@
 interface relativeFunc<T, P> {
     (val: T): P;
 }
-export declare class Transform2D {
+export default class Transform2D {
     el: HTMLElement;
     matchMatrix: RegExp;
     matchTranslate: RegExp;
